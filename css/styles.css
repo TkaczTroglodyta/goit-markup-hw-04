@@ -239,23 +239,11 @@ body {
   padding: 50px;
   border: 1px dashed #2a2a2a;
   border-radius: 8px;
-  /* fill: var(--color-text-secondary);
-  background-color: var(--color-bgcolor-secondary); */
 }
 .icon-envelope {
-  fill: #757575;
+  fill: var(--color-text-medium);
 }
 .icon-envelope:hover,
 .icon-envelope:focus {
-  /* fill: var(--color-text-secondary); */
-  fill: goldenrod;
-}
-
-.icon-astronaut {
-  fill: var(--color-text-medium);
-}
-
-.icon-astronaut:hover,
-.icon-astronaut:focus {
   fill: var(--color-text-secondary);
 }
