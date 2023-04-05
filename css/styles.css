@@ -51,19 +51,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* padding: 24px 0; */
+  padding: 24px 0; /* calculated padding */
 }
 .page-header {
   display: flex;
-  /* align-items: center; */
+  align-items: center; /* needed for centering 'nav' items to 'logo' */
   background-color: var(--color-bgcolor-primary);
 }
 .logo {
-  /* display: flex; */
-  /* align-items: center; */
   font-family: var(--font-family-secondary), sans-serif;
-  padding: 24px 80px 24px 0;
-  /* padding-right: 80px; */
+  padding-right: 80px;
   font-size: 26px;
   font-weight: 700;
   line-height: 1.2;
@@ -76,15 +73,11 @@ body {
 }
 .menu {
   display: flex;
-  /* align-items: center; */
   gap: 40px;
-  padding: 32px 0;
 }
 .contacts {
   display: flex;
-  /* align-items: center; */
   gap: 40px;
-  padding: 32px 0;
   justify-content: flex-end;
 }
 .menu,
