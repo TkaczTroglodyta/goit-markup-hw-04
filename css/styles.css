@@ -239,7 +239,7 @@ body {
   padding: 25px;
   border: 1px dashed #2a2a2a;
   border-radius: 8px;
-  fill: var(--color-text-light);
+  fill: var(--color-text-secondary);
   background-color: var(--color-bgcolor-secondary);
 }
 
