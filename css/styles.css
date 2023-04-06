@@ -6,8 +6,11 @@
   --color-text-medium: #757575;
   --color-text-dark: #000000;
   --color-border-primary: #ececec;
+  --color-border-light: #afb1b8;
+  --color-border-secondary: #2196f3;
   --color-bgcolor-primary: #ffffff;
   --color-bgcolor-secondary: #2196f3;
+  --color-bgcolor-tertiary: #afb1b8;
   --color-bgcolor-light: #f5f4fa;
   --color-bgcolor-dark: #2f303a;
   --font-family-primary: 'Roboto', sans-serif;
@@ -165,7 +168,8 @@ body {
   line-height: 1.7;
   padding-top: 10px;
 }
-.activities {
+.activities,
+.customers {
   display: flex;
   justify-content: space-between;
   padding-top: 50px;
@@ -196,6 +200,25 @@ body {
 }
 .team p {
   padding: 10px;
+}
+.rect {
+  display: flex;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--color-border-light);
+  border-radius: 4px;
+}
+.rect:hover,
+.rect:focus {
+  border: 1px solid var(--color-border-secondary);
+}
+.icon-customers {
+  fill: var(--color-bgcolor-tertiary);
+}
+.icon-customers:hover,
+.icon-customers:focus {
+  fill: var(--color-bgcolor-secondary);
 }
 /* portfolio */
 .selection-btns {
