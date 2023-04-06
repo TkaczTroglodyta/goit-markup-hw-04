@@ -156,12 +156,26 @@ body {
   display: flex;
   gap: 30px;
 }
+.rect-i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  background-color: var(--color-bgcolor-light);
+  border-radius: 4px;
+}
+.icon-infos {
+  width: 70px;
+  height: 70px;
+}
 .infos h3 {
   font-family: var(--font-family-primary);
   font-size: 14px;
   font-weight: 700;
   line-height: 1.1;
   text-transform: uppercase;
+  padding-top: 30px;
 }
 .infos p {
   font-size: 14px;
@@ -201,7 +215,7 @@ body {
 .team p {
   padding: 10px;
 }
-.rect {
+.rect-c {
   display: flex;
   align-items: center;
   width: 170px;
@@ -209,8 +223,8 @@ body {
   border: 1px solid var(--color-border-light);
   border-radius: 4px;
 }
-.rect:hover,
-.rect:focus {
+.rect-c:hover,
+.rect-c:focus {
   border: 1px solid var(--color-border-secondary);
 }
 .icon-customers {
