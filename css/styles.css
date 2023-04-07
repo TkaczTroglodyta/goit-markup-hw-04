@@ -103,11 +103,15 @@ body {
 .link-contact {
   color: var(--color-text-medium);
 }
-li.link-contact::before {
+.link-contact::before {
+  display: flex;
+  align-items: center;
   content: url('../images/icons.svg#icon-envelope');
   fill: var(--color-text-medium);
   width: 16px;
   height: 12px;
+  margin-right: 10px;
+  background-size: contain;
 }
 .link:hover,
 .link:focus,
@@ -149,7 +153,7 @@ li.link-contact::before {
   display: flex;
   gap: 30px;
 }
-.rect-i {
+.rect-infos {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -192,7 +196,7 @@ li.link-contact::before {
   padding-top: 50px;
 }
 .team-card {
-  height: 368px;
+  height: 428px;
   background-color: var(--color-bgcolor-primary);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -207,6 +211,22 @@ li.link-contact::before {
 }
 .team p {
   padding: 10px;
+}
+.team-social {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 32px 30px 32px;
+}
+.icon-social {
+  cursor: pointer;
+  fill: var(--color-bgcolor-tertiary);
+  padding: 12px;
+  border-radius: 50%;
+}
+.icon-social:hover {
+  fill: var(--color-bgcolor-primary);
+  background-color: var(--color-bgcolor-secondary);
 }
 .rect-c {
   cursor: pointer;
