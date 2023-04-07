@@ -103,7 +103,7 @@ body {
 .link-contact {
   color: var(--color-text-medium);
 }
-.link-contact::before {
+/* .link-contact::before {
   display: flex;
   align-items: center;
   content: url('../images/icons.svg#icon-envelope');
@@ -112,7 +112,7 @@ body {
   height: 12px;
   margin-right: 10px;
   background-size: contain;
-}
+} */
 .link:hover,
 .link:focus,
 .link-contact:hover {
@@ -250,12 +250,19 @@ body {
 .icon-customer:focus {
   fill: var(--color-bgcolor-secondary);
 }
+.dark-bg-f {
+  padding: 60px 0;
+  background-color: var(--color-bgcolor-dark);
+}
 .addr {
   color: var(--color-text-light);
   font-size: 14px;
   line-height: 1.7;
   font-style: normal;
-  padding-top: 20px;
+  padding-top: 11px;
+}
+.addr li {
+  padding-top: 9px;
 }
 /* portfolio */
 .selection-btns {
@@ -307,19 +314,4 @@ body {
 .achieve-card p {
   line-height: 1.9;
   padding: 4px 24px 20px 24px;
-}
-/* test */
-.icon {
-  margin-left: 12px;
-  margin-right: 12px;
-  padding: 50px;
-  border: 1px dashed #2a2a2a;
-  border-radius: 8px;
-}
-.icon-envelope {
-  fill: var(--color-text-medium);
-}
-.icon-envelope:hover,
-.icon-envelope:focus {
-  fill: var(--color-text-secondary);
 }
