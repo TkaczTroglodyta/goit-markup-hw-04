@@ -103,6 +103,12 @@ body {
 .link-contact {
   color: var(--color-text-medium);
 }
+li.link-contact::before {
+  content: url('../images/icons.svg#icon-envelope');
+  fill: var(--color-text-medium);
+  width: 16px;
+  height: 12px;
+}
 .link:hover,
 .link:focus,
 .link-contact:hover {
