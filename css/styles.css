@@ -93,10 +93,6 @@ body {
 .top-line {
   border-top: 1px solid var(--color-border-primary);
 }
-.dark-bg {
-  padding: 75px 0;
-  background-color: var(--color-bgcolor-dark);
-}
 .link {
   color: var(--color-text-primary);
 }
@@ -123,6 +119,8 @@ body {
   text-align: center;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url('../images/team.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   background-color: var(--color-bgcolor-dark);
 }
 .section-slogan h1 {
@@ -250,7 +248,7 @@ body {
 .icon-customer:focus {
   fill: var(--color-bgcolor-secondary);
 }
-.dark-bg-f {
+.dark-bg {
   padding: 60px 0;
   background-color: var(--color-bgcolor-dark);
 }
