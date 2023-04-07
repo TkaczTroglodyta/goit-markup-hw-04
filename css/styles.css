@@ -215,6 +215,7 @@ body {
   border: 1px solid var(--color-border-secondary);
 }
 .icon-customer {
+  padding-top: 2px;
   fill: var(--color-bgcolor-tertiary);
 }
 .icon-customer:hover,
@@ -249,6 +250,8 @@ body {
 .btn-filter:focus {
   color: var(--color-text-light);
   background-color: var(--color-text-secondary);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .achievements {
   display: flex;
@@ -256,9 +259,15 @@ body {
   gap: 30px;
 }
 .achieve-card {
+  cursor: pointer;
   height: 404px;
   background-color: var(--color-bgcolor-primary);
   border: 1px solid #eeeeee;
+}
+.achieve-card:hover,
+.achieve-card:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .achieve-card h3 {
   font-size: 18px;
