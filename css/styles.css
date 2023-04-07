@@ -134,21 +134,6 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
-.btn-filter {
-  cursor: pointer;
-  color: var(--color-text-primary);
-  background-color: var(--color-bgcolor-light);
-  font-weight: 500;
-  line-height: 1.6;
-  padding: 6px 22px;
-  border: none;
-  border-radius: 4px;
-}
-.btn-filter:hover,
-.btn-filter:focus {
-  color: var(--color-text-light);
-  background-color: var(--color-text-secondary);
-}
 .section-infos {
   padding-bottom: 0;
 }
@@ -216,23 +201,32 @@ body {
   padding: 10px;
 }
 .rect-c {
+  cursor: pointer;
   display: flex;
   align-items: center;
   width: 170px;
   height: 92px;
   border: 1px solid var(--color-border-light);
   border-radius: 4px;
+  background: var(--color-bgcolor-primary);
 }
 .rect-c:hover,
 .rect-c:focus {
   border: 1px solid var(--color-border-secondary);
 }
-.icon-customers {
+.icon-customer {
   fill: var(--color-bgcolor-tertiary);
 }
-.icon-customers:hover,
-.icon-customers:focus {
+.icon-customer:hover,
+.icon-customer:focus {
   fill: var(--color-bgcolor-secondary);
+}
+.addr {
+  color: var(--color-text-light);
+  font-size: 14px;
+  line-height: 1.7;
+  font-style: normal;
+  padding-top: 20px;
 }
 /* portfolio */
 .selection-btns {
@@ -240,6 +234,21 @@ body {
   justify-content: center;
   gap: 8px;
   padding-bottom: 50px;
+}
+.btn-filter {
+  cursor: pointer;
+  color: var(--color-text-primary);
+  background-color: var(--color-bgcolor-light);
+  font-weight: 500;
+  line-height: 1.6;
+  padding: 6px 22px;
+  border: none;
+  border-radius: 4px;
+}
+.btn-filter:hover,
+.btn-filter:focus {
+  color: var(--color-text-light);
+  background-color: var(--color-text-secondary);
 }
 .achievements {
   display: flex;
@@ -261,13 +270,6 @@ body {
 .achieve-card p {
   line-height: 1.9;
   padding: 4px 24px 20px 24px;
-}
-.addr {
-  color: var(--color-text-light);
-  font-size: 14px;
-  line-height: 1.7;
-  font-style: normal;
-  padding-top: 20px;
 }
 /* test */
 .icon {
