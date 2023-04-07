@@ -210,7 +210,7 @@ body {
   text-transform: none;
 }
 .team p {
-  padding: 10px;
+  padding-top: 10px;
 }
 .team-social {
   display: flex;
@@ -221,7 +221,7 @@ body {
 .icon-social {
   cursor: pointer;
   fill: var(--color-bgcolor-tertiary);
-  padding: 12px;
+  padding: 6px;
   border-radius: 50%;
 }
 .icon-social:hover {
