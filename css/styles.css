@@ -169,8 +169,7 @@ body {
   width: 70px;
   height: 70px;
 }
-.infos,
-.footer-col h3 {
+.infos h3 {
   font-family: var(--font-family-primary);
   font-size: 14px;
   font-weight: 700;
@@ -262,6 +261,11 @@ body {
   padding-right: 70px;
 }
 .footer-col h3 {
+  font-family: var(--font-family-primary);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.1;
+  text-transform: uppercase;
   color: var(--color-text-light);
   padding-top: 12px;
 }
