@@ -96,23 +96,23 @@ body {
 .link {
   color: var(--color-text-primary);
 }
-.link-contact {
-  color: var(--color-text-medium);
-}
-/* .link-contact::before {
+.link-contact,
+.use {
   display: flex;
   align-items: center;
-  content: url('../images/icons.svg#icon-envelope');
+  color: var(--color-text-medium);
   fill: var(--color-text-medium);
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  background-size: contain;
-} */
+}
 .link:hover,
 .link:focus,
-.link-contact:hover {
+.link-contact:hover,
+.use {
   color: var(--color-text-secondary);
+  fill: var(--color-bgcolor-secondary);
+}
+.icon-mail::after {
+  content: 'info@example.com';
+  padding-left: 10px;
 }
 .section-slogan {
   padding: 200px 0;
