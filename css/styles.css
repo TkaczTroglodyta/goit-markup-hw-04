@@ -277,9 +277,21 @@ body {
 }
 .footer-social {
   display: flex;
-  align-items: left;
+  align-items: center;
   justify-content: space-between;
   padding-top: 20px;
+  gap: 10px;
+}
+.footer-icon-social {
+  cursor: pointer;
+  fill: var(--color-bgcolor-primary);
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 6px;
+  border-radius: 50%;
+}
+.footer-icon-social:hover {
+  fill: var(--color-bgcolor-primary);
+  background-color: var(--color-bgcolor-secondary);
 }
 /* portfolio */
 .selection-btns {
