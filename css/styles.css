@@ -92,19 +92,17 @@ body {
 .link {
   color: var(--color-primary);
 }
-.link-contact,
-.use {
+.link-contact {
   display: flex;
   align-items: center;
   color: var(--color-medium);
-  fill: currentColor;
+  --icon-color: currentColor;
 }
 .link:hover,
 .link:focus,
-.link-contact:hover,
-.use {
+.link-contact:hover {
   color: var(--color-secondary);
-  fill: currentColor;
+  fill: var(--icon-color);
 }
 .icon-mail::after {
   content: 'info@example.com';
