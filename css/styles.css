@@ -1,16 +1,12 @@
-/* pseudoklasa :root zmienne globalne*/
+/* pseudoklasa :root zmienne globalne */
 :root {
-  --color-text-primary: #212121;
-  --color-text-secondary: #2196f3;
-  --color-text-light: #ffffff;
-  --color-text-medium: #757575;
-  --color-text-dark: #000000;
+  --color-primary: #212121;
+  --color-secondary: #2196f3;
+  --color-tertiary: #afb1b8;
+  --color-light: #ffffff;
+  --color-medium: #757575;
+  --color-dark: #000000;
   --color-border-primary: #ececec;
-  --color-border-light: #afb1b8;
-  --color-border-secondary: #2196f3;
-  --color-bgcolor-primary: #ffffff;
-  --color-bgcolor-secondary: #2196f3;
-  --color-bgcolor-tertiary: #afb1b8;
   --color-bgcolor-light: #f5f4fa;
   --color-bgcolor-dark: #2f303a;
   --font-family-primary: 'Roboto', sans-serif;
@@ -25,14 +21,14 @@ ul {
 }
 a {
   text-decoration: none;
-  color: var(--color-text-secondary);
+  color: var(--color-secondary);
 }
 p {
-  color: var(--color-text-medium);
+  color: var(--color-medium);
 }
 body {
   font-family: var(--font-family-primary);
-  background-color: var(--color-bgcolor-primary);
+  background-color: var(--color-light);
   letter-spacing: 0.03em;
 }
 .section {
@@ -59,7 +55,7 @@ body {
 .page-header {
   display: flex;
   align-items: center; /* needed for centering 'nav' items to 'logo' */
-  background-color: var(--color-bgcolor-primary);
+  background-color: var(--color-light);
 }
 .logo {
   font-family: var(--font-family-secondary), sans-serif;
@@ -69,10 +65,10 @@ body {
   line-height: 1.2;
 }
 .logo-light {
-  color: var(--color-text-light);
+  color: var(--color-light);
 }
 .logo-dark {
-  color: var(--color-text-dark);
+  color: var(--color-dark);
 }
 .menu {
   display: flex;
@@ -94,21 +90,21 @@ body {
   border-top: 1px solid var(--color-border-primary);
 }
 .link {
-  color: var(--color-text-primary);
+  color: var(--color-primary);
 }
 .link-contact,
 .use {
   display: flex;
   align-items: center;
-  color: var(--color-text-medium);
-  fill: var(--color-text-medium);
+  color: var(--color-medium);
+  fill: currentColor;
 }
 .link:hover,
 .link:focus,
 .link-contact:hover,
 .use {
-  color: var(--color-text-secondary);
-  fill: var(--color-bgcolor-secondary);
+  color: var(--color-secondary);
+  fill: currentColor;
 }
 .icon-mail::after {
   content: 'info@example.com';
@@ -133,13 +129,13 @@ body {
   font-weight: 900;
   line-height: 1.36;
   letter-spacing: 0.06em;
-  color: var(--color-text-light);
+  color: var(--color-light);
   text-transform: uppercase;
 }
 .btn-slogan {
   cursor: pointer;
-  color: var(--color-text-light);
-  background-color: var(--color-bgcolor-secondary);
+  color: var(--color-light);
+  background-color: var(--color-secondary);
   font-weight: 500;
   line-height: 1.9;
   border: none;
@@ -199,7 +195,7 @@ body {
 }
 .team-card {
   height: 428px;
-  background-color: var(--color-bgcolor-primary);
+  background-color: var(--color-light);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -221,13 +217,13 @@ body {
 }
 .icon-social {
   cursor: pointer;
-  fill: var(--color-bgcolor-tertiary);
+  fill: var(--color-tertiary);
   padding: 6px;
   border-radius: 50%;
 }
 .icon-social:hover {
-  fill: var(--color-bgcolor-primary);
-  background-color: var(--color-bgcolor-secondary);
+  fill: var(--color-light);
+  background-color: var(--color-secondary);
 }
 .rect-c {
   cursor: pointer;
@@ -235,21 +231,21 @@ body {
   align-items: center;
   width: 170px;
   height: 92px;
-  border: 1px solid var(--color-border-light);
+  border: 1px solid var(--color-tertiary);
   border-radius: 4px;
-  background: var(--color-bgcolor-primary);
+  background: var(--color-light);
 }
 .rect-c:hover,
 .rect-c:focus {
-  border: 1px solid var(--color-border-secondary);
+  border: 1px solid var(--color-secondary);
 }
 .icon-customer {
   padding-top: 2px;
-  fill: var(--color-bgcolor-tertiary);
+  fill: var(--color-tertiary);
 }
 .icon-customer:hover,
 .icon-customer:focus {
-  fill: var(--color-bgcolor-secondary);
+  fill: var(--color-secondary);
 }
 .dark-bg {
   height: 252px;
@@ -266,11 +262,11 @@ body {
   font-weight: 700;
   line-height: 1.1;
   text-transform: uppercase;
-  color: var(--color-text-light);
+  color: var(--color-light);
   padding-top: 12px;
 }
 .addr {
-  color: var(--color-text-light);
+  color: var(--color-light);
   font-size: 14px;
   line-height: 1.7;
   font-style: normal;
@@ -288,14 +284,14 @@ body {
 }
 .footer-icon-social {
   cursor: pointer;
-  fill: var(--color-bgcolor-primary);
+  fill: var(--color-light);
   background-color: rgba(255, 255, 255, 0.1);
   padding: 6px;
   border-radius: 50%;
 }
 .footer-icon-social:hover {
-  fill: var(--color-bgcolor-primary);
-  background-color: var(--color-bgcolor-secondary);
+  fill: var(--color-light);
+  background-color: var(--color-secondary);
 }
 /* portfolio */
 .selection-btns {
@@ -306,7 +302,7 @@ body {
 }
 .btn-filter {
   cursor: pointer;
-  color: var(--color-text-primary);
+  color: var(--color-primary);
   background-color: var(--color-bgcolor-light);
   font-weight: 500;
   line-height: 1.6;
@@ -316,8 +312,8 @@ body {
 }
 .btn-filter:hover,
 .btn-filter:focus {
-  color: var(--color-text-light);
-  background-color: var(--color-text-secondary);
+  color: var(--color-light);
+  background-color: var(--color-secondary);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -329,7 +325,7 @@ body {
 .achieve-card {
   cursor: pointer;
   height: 404px;
-  background-color: var(--color-bgcolor-primary);
+  background-color: var(--color-light);
   border: 1px solid #eeeeee;
 }
 .achieve-card:hover,
